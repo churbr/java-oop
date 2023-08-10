@@ -45,3 +45,20 @@ With that said, we now have an idea of what operation to put in this class. We w
 | Update the person's information | ```updateInfo()``` |
 | Pay the person wage | ```payWage()``` |
 | Give a promotion | ```setPromotion()``` |
+
+## Abstraction
+
+Abstraction is the process of simplifying complex systems by breaking them down into smaller, more manageable parts. 
+
+## Encapsulation
+
+Encapsulation is basically hiding data and complexity. It is a principle of hiding internal implementation details of an object and exposing only necessary code to interact with it. Also, it helps to protect the objects data from unauthorized access and modification of code.
+
+A good example in real-world is when you are coding, there are already built-in class libraries created by experienced programmers already made available for you to use.
+
+Like a *Speech Recognition library*.
+
+All you have to do is just import the library and use the methods available. It's not necessary to understand the inner workings of the class, all you need to know is the name of the class, the properties and methods available, and any data that need to be supplied when they are called.
+
+This simplifies the use of objects and helps to ensure that the data and objects are encapsulated within the class library are safe.
+
