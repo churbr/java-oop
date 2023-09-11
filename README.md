@@ -62,3 +62,31 @@ All you have to do is just import the library and use the methods available. It'
 
 This simplifies the use of objects and helps to ensure that the data and objects are encapsulated within the class library are safe.
 
+## Inheritance
+
+A class can derive its methods & properties from another class.
+
+Inheritance promotes **code reusability** and the creation of a **hierarchical relationship between classes**, where a subclass can extend the functionality of its superclass.
+
+_The image below illustrates the concept of Encapsulation:_
+
+![Inheritance Class Diagram](./Inheritance%20Class%20Diagram.png)
+
+**Explanation:**
+
+1)  The ```Person class``` defines the methods and properties of a person.
+<br />
+2) The ```Employee class``` derives the methods and properties of Person class, and can have some methods and properties on its own. Because an Employee is a type of person.
+<br />
+3) The ```Customer class``` derives the methods and properties of Person class, and can have some methods and properties on its own. Because a Customer is also a type of person.
+<br />
+4) ```Programmer class```, ```Manager class``` and ```Cleaner class``` derives the methods and properties of the Employee class. Each of these classes can have their own properties and methods specific to them. Because a programmer, manager and cleaner are also a type of Employee and an Employee is also a type of Person. This will then result to a hierarchical relationship between classes.
+<br />
+
+**Definition of Terms:**
+
+The class at the start of the inheritance is called the **BASE CLASS** (*Person*).
+
+Any class that derives from another class, is called a **SUBCLASS** (*Employee & Customer; under Employee: Manager, Programmer, Cleaner*)
+
+Any Class that is derived from, is called a **SUPERCLASS** (*Person & Employee*).
