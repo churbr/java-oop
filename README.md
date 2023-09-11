@@ -76,10 +76,13 @@ _The image below illustrates the concept of Encapsulation:_
 
 1)  The ```Person class``` defines the methods and properties of a person.
 <br />
+
 2) The ```Employee class``` derives the methods and properties of Person class, and can have some methods and properties on its own. Because an Employee is a type of person.
 <br />
+
 3) The ```Customer class``` derives the methods and properties of Person class, and can have some methods and properties on its own. Because a Customer is also a type of person.
 <br />
+
 4) ```Programmer class```, ```Manager class``` and ```Cleaner class``` derives the methods and properties of the Employee class. Each of these classes can have their own properties and methods specific to them. Because a programmer, manager and cleaner are also a type of Employee and an Employee is also a type of Person. This will then result to a hierarchical relationship between classes.
 <br />
 
