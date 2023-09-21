@@ -1,4 +1,4 @@
-# The 6 Fundamental concepts of OOP:
+# The 6 Fundamental concepts of OOP
 - Objects
 - Classes
 - Abstraction
@@ -72,7 +72,7 @@ _The image below illustrates the concept of Encapsulation:_
 
 ![Inheritance Class Diagram](./Inheritance%20Class%20Diagram.png)
 
-**Explanation:**
+*Explanation:*
 
 1)  The ```Person class``` defines the methods and properties of a person.
 <br />
@@ -86,10 +86,34 @@ _The image below illustrates the concept of Encapsulation:_
 4) ```Programmer class```, ```Manager class``` and ```Cleaner class``` derives the methods and properties of the Employee class. Each of these classes can have their own properties and methods specific to them. Because a programmer, manager and cleaner are also a type of Employee and an Employee is also a type of Person. This will then result to a hierarchical relationship between classes.
 <br />
 
-**Definition of Terms:**
+*Definition of Terms:*
 
 The class at the start of the inheritance is called the **BASE CLASS** (*Person*).
 
 Any class that derives from another class, is called a **SUBCLASS** (*Employee & Customer; under Employee: Manager, Programmer, Cleaner*)
 
 Any Class that is derived from, is called a **SUPERCLASS** (*Person & Employee*).
+
+## Polymorphism
+
+Polymorphism basically means ```many forms```. 'Poly' means *'many'* and 'morphism' means *'form/shape'*. Different subclasses that belong to same superclass, can implement their shared interface in different ways.
+
+A good example of this is the category of Animal. Let's say we have a cat and a dog. All animals can make a sound. But every animal sounds different.
+
+To implement, we will have a superclass of ```Animal``` and under it, are 2 subclasses ```Dog``` and ```Cat```.
+
+![Inheritance Class Diagram](./Polymorphism.drawio.png)
+
+Animal class will have a method called ```makeSound()``` that prints _'Rawr rawr ~~'_.
+
+Cat and Dog classes inherits Animal class, so that means they can access the makeSound() method.
+
+If Cat or Dog class doesn't implement a makeSound() method on their own, by default it will call the makeSound() method from Animal class (parent class).
+
+But if Cat/Dog class or both implements their own makeSound() method, say for example Cat class will have a makeSound() method that prints <span style="color: green;">'Meow meow ~~'</span>.
+
+And Dog class implements makeSound() method that prints <span style="color: green;">'Woof woof ~~'</span>. That's when **Polymorphism** comes into play. Basically, creating their own version of makeSound() method, hence many forms.
+
+This is also called **'Method overriding'**, when you create a method inside the child class with the exact same method signature as the parent class.
+
+And **'Method overloading'**, is when you have 2 or more methods in the class that have exactly the same method name but takes different parameters.
