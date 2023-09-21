@@ -117,3 +117,70 @@ And Dog class implements makeSound() method that prints _'Woof woof ~~'_. That's
 This is also called **'Method overriding'**, when you create a method inside the child class with the exact same method signature as the parent class.
 
 And **'Method overloading'**, is when you have 2 or more methods in the class that have exactly the same method name but takes different parameters.
+
+*Code Example:*
+
+```java
+class Animal {
+    private String breed;
+
+    public String getBreed() {
+        return breed;
+    }
+
+    public void setBreed(String breed) {
+        this.breed = breed;
+    }
+
+    public void makeSound() {
+        System.out.println("Rawr rawr ~~");
+    }
+}
+
+class Dog extends Animal {
+
+    public void fetch() {
+        System.out.println("Fetch!");
+    }
+
+    public void makeSound() { // Method overriding
+        System.out.println("Woof woof ~~");
+    }
+}
+
+class Cat extends Animal {
+
+    public void makeSound() { // Method overriding
+        System.out.println("Meow meow~~");
+    }
+
+    public void makeSound(int n) { // Method overloading: 1
+        for (int i = 1; i < n; i++) {
+            System.out.println("Meow meow~~");
+        }
+    }
+
+    public void makeSound(int n, String sound) { // Method overloading: 2
+        for (int i = 0; i < n; i++) {
+            System.out.println(sound);
+        }
+
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        
+        Animal animal = new Animal();
+        animal.makeSound();
+
+        Dog dog = new Dog();
+        dog.makeSound();
+
+        Cat cat = new Cat();
+        cat.makeSound();
+        cat.makeSound(2);
+        cat.makeSound(3, "Meowoooooo ~~");
+    }
+}
+```
