@@ -110,9 +110,9 @@ Cat and Dog classes inherits Animal class, so that means they can access the mak
 
 If Cat or Dog class doesn't implement a makeSound() method on their own, by default it will call the makeSound() method from Animal class (parent class).
 
-But if Cat/Dog class or both implements their own makeSound() method, say for example Cat class will have a makeSound() method that prints <span style="color: green;">'Meow meow ~~'</span>.
+But if Cat/Dog class or both implements their own makeSound() method, say for example Cat class will have a makeSound() method that prints _'Meow meow ~~'_.
 
-And Dog class implements makeSound() method that prints <span style="color: green;">'Woof woof ~~'</span>. That's when **Polymorphism** comes into play. Basically, creating their own version of makeSound() method, hence many forms.
+And Dog class implements makeSound() method that prints _'Woof woof ~~'_. That's when **Polymorphism** comes into play. _Basically, creating their own version of makeSound() method, hence **many forms**._
 
 This is also called **'Method overriding'**, when you create a method inside the child class with the exact same method signature as the parent class.
 
